@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solutions – Motihari Equality</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Motihari Equality</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="issues.html">Key Issues</a></li>
+      <li><a href="solutions.html" class="active">Solutions</a></li>
+      <li><a href="stats.html">Statistics</a></li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  </nav>
+
+  <header class="hero-header mini-hero">
+    <div class="hero">
+      <img src="https://picsum.photos/1600/400?random=6" alt="Solutions">
+      <div class="hero-text animate-fade">
+        <h1>Solutions</h1>
+        <p>Innovative and inclusive approaches to address key issues.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Solutions</h2>
+    <p>Discover our comprehensive solutions to address key issues in the Motihari community.</p>
+    <h3>Micro-Loan Programs</h3>
+    <p>We provide micro-loans to families, enabling them to start small businesses and improve their quality of life. These programs are designed to empower individuals and promote economic independence.</p>
+
+    <h3>Skill Training Workshops</h3>
+    <p>Our skill training workshops equip individuals with the skills they need to succeed in today's job market. We offer training in various fields, including technology, agriculture, and craftsmanship.</p>
+
+    <h3>Community Centers</h3>
+    <p>We have established community centers that provide access to quality education and resources. These centers serve as hubs for learning, growth, and community engagement.</p>
+
+    <h3>Scholarship Programs</h3>
+    <p>Our scholarship programs enable children to access quality education and pursue their dreams. We believe that education is key to breaking the cycle of poverty and creating a brighter future.</p>
+
+    <h3>Awareness Campaigns</h3>
+    <p>We conduct awareness campaigns to promote social inclusion and equality. These campaigns are designed to change attitudes and behaviors, creating a more accepting and inclusive society.</p>
+
+    <h3>Policy Reforms</h3>
+    <p>We advocate for policy reforms that promote equality and inclusivity. Our efforts are focused on creating a level playing field for all members of the Motihari community.</p>
+
+    <p class="section-desc">
+      Explore our <a href="issues.html">Key Issues</a>, discover our <a href="solutions.html">Solutions</a>, and see our impact on the <a href="stats.html">Statistics</a> page.
+    </p>
+    <div class="solution-links">
+      <h3>Explore Our Solutions:</h3>
+      <ul>
+        <li><a href="solution-awareness.html">Solution Awareness</a></li>
+        <li><a href="solution-community.html">Solution Community</a></li>
+        <li><a href="solution-education.html">Solution Education</a></li>
+        <li><a href="solution-policy.html">Solution Policy</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Motihari Equality. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // Dark Mode Toggle
+    const darkToggle = document.getElementById('dark-mode-toggle');
+    if (darkToggle) {
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+      }
+      darkToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
+      });
+    }
+  </script>
+</body>
+</html>
